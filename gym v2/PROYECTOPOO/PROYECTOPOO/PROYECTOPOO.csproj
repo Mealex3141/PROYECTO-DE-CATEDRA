@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12C07216-DA67-4066-AFF4-935E2A84F744}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROYECTOPOO</RootNamespace>
+    <AssemblyName>PROYECTOPOO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rutina_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rutina_A.Designer.cs">
+      <DependentUpon>Rutina_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rutina_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rutina_B.Designer.cs">
+      <DependentUpon>Rutina_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rutina_A.resx">
+      <DependentUpon>Rutina_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rutina_B.resx">
+      <DependentUpon>Rutina_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo de gimnasio sin límites.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bienvenid%40 al gimnasio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Botón de cierre de sesión neón.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta fitness de cardio y calentamiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de sentadilla sumo con pesa rusa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de prensa de piernas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de ejercicio_ Leg Curl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de extensión de pierna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Glúteo en máquina 06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de entrenamiento Abd Máquina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de cardio en elíptica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de ejercicio GAP minimalista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de cardio en caminadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estiramiento lumbar en tarjeta oscura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estiramiento de isquiotibiales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tarjeta de estiramiento lumbar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
